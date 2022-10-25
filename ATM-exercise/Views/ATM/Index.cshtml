@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+
+    <div class="background-image">
+        <div class="text-center">
+            <h1 class="display-8, text-white">ATM</h1>
+            <div class="text-center">
+                <a asp-controller="User" asp-action="InsertMenu" class='btn btn-success'> INSERT CARD </a>
+                <a asp-controller="Operator" asp-action="InsertMenu" class='btn btn-primary'> OPERATOR MODE </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .background-image {
+        background-image: url('./images/AtmMenuBackground.jpg');
+        background-size: auto;
+        background-repeat: no-repeat;
+        height: 60vh;
+    }
+</style>
+
