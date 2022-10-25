@@ -1,7 +1,12 @@
+using ATM_exercise.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationDbContext>(x => x.UseSqlServer("ConnectionString"));
+
 
 var app = builder.Build();
 
