@@ -16,17 +16,5 @@ namespace ATM_exercise.Controllers
         {
             return View();
         }
-
-        [HttpGet]
-        //[ValidateAntiForgeryToken]
-        public IActionResult InsertMenu()
-        {
-            if (ModelState.IsValid)
-            {
-                return RedirectToAction("ClientMenu", "ATM");
-            }
-            ModelState.AddModelError("", "Invalid password or login");
-            return View();
-        }
     }
 }

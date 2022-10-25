@@ -3,7 +3,7 @@
 <div class="background p-3">
     <div class="row pt-2">
         <div class="col-4">
-        <div asp-validation-summary="ModelOnly"></div>
+            <div asp-validation-summary="ModelOnly"></div>
 
             <div class="col-4 text-right">
             </div>
@@ -20,11 +20,11 @@
             <input type="text" id="lname" name="lname" value=""><br><br>
             <label for="pin">Enter PIN:</label><br>
             <input type="password" id="lname" name="lname" value=""><br><br>
-             <div>
-             </div>
-@*            if (fname == PersonName)
+            <div>
+            </div>
+            @*            if (fname == PersonName)
             {
-                return ClientMenu;
+            return ClientMenu;
             }*@
             <a asp-controller="ATM" asp-action="ClientMenu" class='btn btn-success'> Submit </a>
             <a asp-controller="ATM" asp-action="Index" class='btn btn-danger'> Back </a>

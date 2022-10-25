@@ -20,5 +20,20 @@ namespace ATM_exercise.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        //[ValidateAntiForgeryToken]
+        public IActionResult InsertMenu()
+        {
+            if (ModelState.IsValid)
+            {
+                return View();
+            }
+
+
+            ModelState.AddModelError("", "Invalid password or login");
+
+            return NotFound();
+        }
     }
 }
